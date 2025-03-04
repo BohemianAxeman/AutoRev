@@ -1,0 +1,8 @@
+%%
+
+%%
+function SimulateSequence()
+
+
+
+end
