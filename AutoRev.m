@@ -36,8 +36,9 @@
 % [6] Add a cost function to map over the grid pts and downselect favorable options
 
 %% Setup Configs and Initial Conditions
-run_configs = ConfigurationSettings;
-run_configs.Mnvr_Type = 'Hohmann';
+run_configs = ConfigurationSettings();
+run_configs.loadTestStates("LEO2GEO")
+run_configs.Mnvr_Type = mnvrTypeEnum.Hohmann;
 
 %% run auto_rev()
 auto_rev(run_configs)
